@@ -140,6 +140,9 @@
         <a href="?app=po" onclick="openSmartTab(event, this.href, 'tab_po', this)" class="tab-btn">
             <i class="fas fa-shopping-cart"></i> <span>Main Po Portal</span>
         </a>
+        <a href="?app=qms" onclick="openSmartTab(event, this.href, 'tab_qms', this)" class="tab-btn">
+        <i class="fas fa-file-invoice"></i> <span>QMS Portal</span>
+        </a>
     </div>
 
     <div class="iframe-container">
@@ -151,18 +154,20 @@
     </div>
 
     <script>
-        // UPDATE: Charo Naye Apps Ke Links (Apne Real Links Yahan Daalein)
+         // UPDATE: Charo Naye Apps Ke Links (Apne Real Links Yahan Daalein)
         const appLinks = {
             'workspace': 'https://script.google.com/macros/s/AKfycbxt4rHJ-BPFPi2sju5HfzLiMebOVQ0JcthojI_g5qNIws_hZv2eFgXcGtHfYyzzHyU/exec',
             'sales': 'https://script.google.com/macros/s/AKfycbw4EDPaDRSXxU1TvkchGwdHc-JaCEFFNm9kZG2JMqnCDYMefpZCL_ML0_jFNQXD-fnI/exec',
-            'po': 'https://script.google.com/macros/s/AKfycbyNTuq3kPhtaLWsBt0JmPlndJPr5fiRqg-ipUcZRJFZiLQPZsgRGwS2Os87c_kHjO_cDw/exec'
+            'po': 'https://script.google.com/macros/s/AKfycbyNTuq3kPhtaLWsBt0JmPlndJPr5fiRqg-ipUcZRJFZiLQPZsgRGwS2Os87c_kHjO_cDw/exec',
+            'qms': 'https://script.google.com/macros/s/AKfycbwRdbr1phURqKy5LDF8bkTGPMUsL3tmcKk-IqoaZP-_2fTB89vzPH7xmG0qPs2rk-RvoQ/exec'
         };
 
         // UPDATE: Naye Tabs Ke Liye Clear Page Titles
         const appTitles = {
             'workspace': 'WorkSpace 💻- SK Hub',
             'sales': ' Order Portal By Sales - SK Hub',
-            'po': 'Main Po Portal 🛒- SK Hub'
+            'po': 'Main Po Portal 🛒- SK Hub',
+            'qms': 'QMS Portal 📄 - SK Hub'
         };
 
         // UPDATE: Page load hone par Default WorkSpace open karega aur URL update karega
